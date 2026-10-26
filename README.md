@@ -1,4 +1,4 @@
-# treinos-mcp
+# garmin_smart_trainer_mcp
 
 MCP local que deixa o Claude Code publicar treinos no **Intervals.icu**, que sincroniza com o
 **Garmin Connect** dos atletas. Você conversa ("monta a semana da atleta1"), aprova, e o treino
@@ -31,10 +31,10 @@ Travas no código:
 ## Setup (uma vez por máquina)
 
 Pré-requisitos: Claude Code e [`uv`](https://docs.astral.sh/uv/) (`curl -LsSf https://astral.sh/uv/install.sh | sh`).
-No openSUSE o Python 3 já vem instalado; o `uv` cuida do resto.
+O `uv` instala o Python se precisar.
 
 ```bash
-git clone git@github.com:SEU_USUARIO/treinos-mcp.git
+git clone https://github.com/andrecccruz/garmin_smart_trainer_mcp.git
 cd garmin_smart_trainer_mcp
 uv sync
 
@@ -111,3 +111,7 @@ do Claude Code abre e morre quando fecha. Depois de mudar o código, rode o `pod
 - Se a chave vazar: Intervals → Settings → Developer → gerar nova, e atualizar o `.env`.
   Commit com chave é vazamento mesmo depois de apagado; o histórico do Git é permanente.
 - A API key do Intervals não tem escopo granular: trate como senha.
+
+## Licença
+
+[MIT](LICENSE).
