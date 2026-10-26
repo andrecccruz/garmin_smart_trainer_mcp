@@ -1,0 +1,9 @@
+.env
+.env.*
+.venv
+.git
+.claude
+tests
+contexto-exemplo
+atletas
+__pycache__

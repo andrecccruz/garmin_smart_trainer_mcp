@@ -1,0 +1,13 @@
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+  - repo: local
+    hooks:
+      - id: bloquear-env
+        name: bloquear .env e contexto de atletas
+        entry: "Arquivo proibido no repo (segredo ou dado de atleta)"
+        language: fail
+        files: '(^|/)(\.env(\..*)?|atletas/.*|contexto/.*)$'
+        exclude: '^\.env\.example$|^contexto-exemplo/'

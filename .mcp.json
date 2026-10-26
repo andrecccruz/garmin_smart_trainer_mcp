@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "intervals": {
+      "command": "uv",
+      "args": ["run", "--quiet", "--directory", "${CLAUDE_PROJECT_DIR:-.}", "intervals-mcp"]
+    }
+  }
+}

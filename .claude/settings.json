@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "mcp__intervals__listar_atletas",
+      "mcp__intervals__listar_treinos",
+      "mcp__intervals__atividades_recentes"
+    ],
+    "ask": [
+      "mcp__intervals__criar_treino",
+      "mcp__intervals__atualizar_treino",
+      "mcp__intervals__apagar_treino"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Edit(./.env)",
+      "Bash(cat .env*)",
+      "Bash(env)",
+      "Bash(printenv*)"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Configuração local do Claude Code (aponta pra pasta de contexto)
+.claude/settings.local.json
+
+# Contexto de atletas NUNCA entra no repo
+atletas/
+contexto/
+treinos-contexto/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+build/
+*.egg-info/
